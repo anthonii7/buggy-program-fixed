@@ -1,0 +1,42 @@
+Debugging using Ai
+For each bug:
+1. Line 20, there are different data types, it mixes int and str.
+2. Type Error is the mistake, as it mixes a string into all the other int.
+3. The fix is quite simple as you just need to remove the quotations and they all the data is the same
+4. This mistake was caught by me, it was definitely the first thing that just stuck out to me entirely.
+
+1. Line 3 would have an error because there is no colon at the end.
+2. It is a syntax error, every function needs a colon
+3. The fix is very simple, just adding the colon at the of the line “def calculate_stats(numbers):”
+4. The mistake was one of the things I discovered on my own but it honestly took a little longer than I would have liked.
+
+1. Line 24 is missing quotes inside the []
+2. NameError is the error since without the quotes, the code will think that it is a variable 
+3. The fix will be to add quotes to the [‘average’] similar to the upper and lower lines.
+4. The mistake was found by myself but I honestly had to go back because I could not remember the name of the error. AI got for me and then confirmed via traceback 
+
+1. Line 10 is missing colon at the end of the line
+2. Syntax Error, needs colon at the end of the line
+3. The fix is easy to just add the colon at the of the code 
+4. This was actually caught by AI because I completely missed it even of I had already found something similar.
+
+
+
+
+Part II
+
+I decided to input my tip calculator into my ai. The first thing ai recommended me to do is condense a lot of the lines into loop.
+I can definitely  see how much better and cleaner it is to be simplified especially once you start to have bigger codes but personally 
+liked seeing how laid out it was before because I could understand it more. The condense version is very clear too but I think I’m used to seeing it the other way. 
+I still used the ai version for the sake of learning the faster python version. Looking back now I can see how much time it saves, basically got rid of 8 whole lines of code.
+
+Instantly the ai caught two very important edge case that if not resolved it would crash the program and it honestly is something that can easily happen.
+If there are no people splitting the bill and someone puts zero then it would crash. Also the edge case for if someone inputs a wrong value in. I decide these two were very important and something I completely need in the program.
+At least for this case I understood what AI was fixing as the edge cases were simply my error because I overlooked adding edge cases when doing the program. 
+Running and testing these fixes were very effortless and I tested after which individual fix to test for errors. 
+
+
+
+Once I promoted my AI about security and reliability issues, it got back to me with a very detailed explanation about the topic. 
+It responded that it is not an issue in these cases like the code we were working on because of the size and purpose of it. Since it does not contain real sensitive data then it is not an issue. 
+The main reasoning was because it does not contain, user input, no file access, no network calls, no database. It did however come up with some future planning about reliability regarding bad data, but it can be avoided using edge cases and planning ahead to try to catch bad data input.
